@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EA55D70C-F9A8-4C24-8629-A890A5A64FC4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>unicornleap</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CE0646C9DBD00BF1EB519E5EF959C2403EA42FFE</key>
+		<string>https://github.com/iamapunkmonkey/unicornleap.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>unicornleap.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CE0646C9DBD00BF1EB519E5EF959C2403EA42FFE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/iamapunkmonkey/unicornleap.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CE0646C9DBD00BF1EB519E5EF959C2403EA42FFE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CE0646C9DBD00BF1EB519E5EF959C2403EA42FFE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>unicornleap</string>
+		</dict>
+	</array>
+</dict>
+</plist>

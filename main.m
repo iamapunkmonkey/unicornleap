@@ -7,12 +7,14 @@
 const char* program_name;
 double seconds;
 int unicorns;
-const char* short_options = "hs:n:v";
+bool useTrollface;
+const char* short_options = "hs:n:v:t";
 const struct option long_options[] = {
     { "help",    0, NULL, 'h' },
     { "seconds", 1, NULL, 's' },
     { "number",  1, NULL, 'n' },
     { "verbose", 0, NULL, 'v' },
+	{ "troll",   0, NULL, 't' },
     { NULL,      0, NULL, 0   }   /* Required at end of array.  */
 };
 
@@ -132,7 +134,7 @@ void animateImage () {
 
     // Gather image paths
     NSString *folder = [NSHomeDirectory() stringByAppendingPathComponent:@".unicornleap"];
-    NSString *imagePath = [folder stringByAppendingPathComponent:@"unicorn.png"];
+	NSString *imagePath = [folder stringByAppendingPathComponent:(useTrollface) ? @"trollface.png" : @"unicorn.png"];
     NSString *sparklePath = [folder stringByAppendingPathComponent:@"sparkle.png"];
 
     // Get image dimensions
@@ -202,6 +204,7 @@ int main (int argc, char * argv[]) {
 
     // Parse options
     int next_option;
+	useTrollface = false;
 
     do {
         next_option = getopt_long(argc, argv, short_options, long_options, NULL);
@@ -218,6 +221,9 @@ int main (int argc, char * argv[]) {
             case 'n':
                 n = optarg;
                 break;
+			case 't':
+				useTrollface = true;
+				break;
 
             case 'h': print_usage(stdout, 0);
             case '?': print_usage(stderr, 1);

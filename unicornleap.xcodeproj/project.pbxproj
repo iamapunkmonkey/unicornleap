@@ -31,6 +31,7 @@
 		9A2C9C6016E6D87400F945D4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9A2C9C6216E6D87A00F945D4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9ABBBE3C16E6D68B00E12E46 /* unicornleap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = unicornleap; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC52F1451ABF2E0B0044F23E /* Troll-face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Troll-face.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +50,7 @@
 		9ABBBE3316E6D68B00E12E46 = {
 			isa = PBXGroup;
 			children = (
+				FC52F1451ABF2E0B0044F23E /* Troll-face.png */,
 				9A2C9C5D16E6D7EA00F945D4 /* main.m */,
 				9A2C9C5E16E6D7EA00F945D4 /* unicorn.png */,
 				9A2C9C5F16E6D7EA00F945D4 /* unicornleap.1 */,
