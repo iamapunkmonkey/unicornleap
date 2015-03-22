@@ -28,5 +28,6 @@ Usage
 
 Unicorn:
     unicornleap
+    
 Troll Face:
     unicornleap -t
