@@ -1,7 +1,9 @@
 Unicornleap
 ===========
 
-A reimplementaion of KevinLiddle/unicornleap using CoreAnimation.
+A reimplementaion of KevinLiddle/unicornleap using CoreAnimation. Forked from gdavey/unicornleap.
+
+Added in a troll face to allow for either a unicorn or a troll face jumping across the screen.
 
 Installation
 ------------
@@ -24,4 +26,7 @@ the PREFIX env variable.
 Usage
 -----
 
+Unicorn:
     unicornleap
+Troll Face:
+    unicornleap -t
