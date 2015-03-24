@@ -50,7 +50,12 @@ CAEmitterLayer * getEmitterForImageInFrame (CGImageRef sparkleImage, CGSize imag
 
     // Fade from white to purple
     sparkle.color = CGColorCreateGenericRGB(1.0, 1.0, 1.0, 1.0);
-    sparkle.greenSpeed = -0.7;
+	if(useTrollface){
+		sparkle.greenSpeed = -1;
+		sparkle.blueSpeed = -1;
+	}
+	else
+		sparkle.redSpeed = -0.7;
 
     sparkle.minificationFilter = kCAFilterNearest;
 
@@ -58,7 +63,7 @@ CAEmitterLayer * getEmitterForImageInFrame (CGImageRef sparkleImage, CGSize imag
     sparkle.alphaSpeed = -1.0;
 
     // Shrink
-    sparkle.scale = 0.8;
+    sparkle.scale = 1.2;
     sparkle.scaleRange = 0.5;
     sparkle.scaleSpeed = sparkle.alphaSpeed - base;
 
