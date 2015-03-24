@@ -1,7 +1,7 @@
 Unicornleap
 ===========
 
-A reimplementaion of KevinLiddle/unicornleap using CoreAnimation. Forked from gdavey/unicornleap.
+A reimplementaion of KevinLiddle/unicornleap using CoreAnimation. Forked from jgdavey/unicornleap.
 
 Added in a troll face to allow for either a unicorn or a troll face jumping across the screen.
 
