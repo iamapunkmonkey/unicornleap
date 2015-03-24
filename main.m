@@ -55,7 +55,7 @@ CAEmitterLayer * getEmitterForImageInFrame (CGImageRef sparkleImage, CGSize imag
 		sparkle.blueSpeed = -1;
 	}
 	else
-		sparkle.redSpeed = -0.7;
+		sparkle.greenSpeed = -1;
 
     sparkle.minificationFilter = kCAFilterNearest;
 
