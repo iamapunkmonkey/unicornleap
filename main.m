@@ -134,7 +134,53 @@ void animateImage () {
 
     // Gather image paths
     NSString *folder = [NSHomeDirectory() stringByAppendingPathComponent:@".unicornleap"];
-	NSString *imagePath = [folder stringByAppendingPathComponent:(useTrollface) ? @"trollface.png" : @"unicorn.png"];
+	
+	NSString *imageName = @"";
+	if (useTrollface) {
+		int randNumber = arc4random_uniform(5);
+		switch (randNumber) {
+			case 0:
+				imageName = @"trollface.png";
+				break;
+			case 1:
+				imageName = @"face.png";
+				break;
+			case 2:
+				imageName = @"huh.png";
+				break;
+			case 3:
+				imageName = @"kirby.png";
+				break;
+			case 4:
+				imageName = @"crying.png";
+				break;
+			default:
+				imageName = @"trollface.png";
+				break;
+		}
+	} else {
+		int randNumber = arc4random_uniform(4);
+		switch (randNumber) {
+			case 0:
+				imageName = @"unicorn.png";
+				break;
+			case 1:
+				imageName = @"nyan_cat.png";
+				break;
+			case 2:
+				imageName = @"jake.png";
+				break;
+			case 3:
+				imageName = @"gir.png";
+				break;
+			default:
+				imageName = @"unicorn.png";
+				break;
+		}
+	}
+	
+	
+	NSString *imagePath = [folder stringByAppendingPathComponent:imageName];
     NSString *sparklePath = [folder stringByAppendingPathComponent:@"sparkle.png"];
 
     // Get image dimensions

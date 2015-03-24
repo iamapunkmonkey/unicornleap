@@ -31,7 +31,11 @@
 		9A2C9C6016E6D87400F945D4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9A2C9C6216E6D87A00F945D4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9ABBBE3C16E6D68B00E12E46 /* unicornleap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = unicornleap; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC52F1451ABF2E0B0044F23E /* Troll-face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Troll-face.png"; sourceTree = "<group>"; };
+		FC5814F31AC0FC1F00896A62 /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face.png; sourceTree = "<group>"; };
+		FC5814F41AC0FC1F00896A62 /* huh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huh.png; sourceTree = "<group>"; };
+		FC5814F51AC0FC1F00896A62 /* kirby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kirby.png; sourceTree = "<group>"; };
+		FC5814F61AC0FC1F00896A62 /* sparkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sparkle.png; sourceTree = "<group>"; };
+		FC5814F71AC0FC1F00896A62 /* trollface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trollface.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +54,11 @@
 		9ABBBE3316E6D68B00E12E46 = {
 			isa = PBXGroup;
 			children = (
-				FC52F1451ABF2E0B0044F23E /* Troll-face.png */,
+				FC5814F31AC0FC1F00896A62 /* face.png */,
+				FC5814F41AC0FC1F00896A62 /* huh.png */,
+				FC5814F51AC0FC1F00896A62 /* kirby.png */,
+				FC5814F61AC0FC1F00896A62 /* sparkle.png */,
+				FC5814F71AC0FC1F00896A62 /* trollface.png */,
 				9A2C9C5D16E6D7EA00F945D4 /* main.m */,
 				9A2C9C5E16E6D7EA00F945D4 /* unicorn.png */,
 				9A2C9C5F16E6D7EA00F945D4 /* unicornleap.1 */,
