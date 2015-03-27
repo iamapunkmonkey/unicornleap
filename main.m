@@ -43,19 +43,26 @@ CAEmitterLayer * getEmitterForImageInFrame (CGImageRef sparkleImage, CGSize imag
 
     sparkle.contents = (id)(sparkleImage);
 
-    sparkle.birthRate = 20.0/seconds + 15.0;
+    sparkle.birthRate = 20.0/seconds + 30.0;
     sparkle.lifetime = seconds * 0.5 + base;
     sparkle.lifetimeRange = 1.5;
     sparkle.name = @"sparkle";
 
-    // Fade from white to purple
-    sparkle.color = CGColorCreateGenericRGB(1.0, 1.0, 1.0, 1.0);
+    // Fade from white to red if using troll face else random color
+    sparkle.color = CGColorCreateGenericRGB(0.6, 0.6, 0.6, 1.0);
 	if(useTrollface){
-		sparkle.greenSpeed = -1;
+        sparkle.greenSpeed = -1;
 		sparkle.blueSpeed = -1;
 	}
-	else
-		sparkle.greenSpeed = -1;
+    else{
+        sparkle.redRange = 1.0;
+        sparkle.redSpeed = 0.5;
+        sparkle.blueRange = 1.0;
+        sparkle.blueSpeed = 0.5;
+        sparkle.greenRange = 1.0;
+        sparkle.greenSpeed = 0.5;
+        sparkle.alphaSpeed = -0.2;
+    }
 
     sparkle.minificationFilter = kCAFilterNearest;
 
@@ -88,7 +95,7 @@ CGMutablePathRef pathInFrameForSize (CGRect screen, CGSize size) {
     CGPoint origin = CGPointMake(-size.width, -size.height);
     CGPoint destination = CGPointMake(screen.size.width + size.width, origin.y);
     CGFloat midpoint = (destination.x + origin.x) / 2.0;
-    CGFloat peak = size.height + 50.0;
+    CGFloat peak = size.height + 100.0;
     CGPathMoveToPoint(path, NULL, origin.x, origin.y);
 
     CGPathAddCurveToPoint(path, NULL, midpoint, peak,
